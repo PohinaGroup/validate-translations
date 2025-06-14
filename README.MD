@@ -74,6 +74,7 @@ node validate-translations.js
 If everything is hunky-dory, it'll exit cleanly. If there are issues (missing keys, etc.), it will print a detailed report and exit with a non-zero status code (process.exit(1)). This makes it perfect for CI/CD pipelines.
 
 Output Examples
+```bash
 All Good
 🔍 Validating translation completeness...
 
@@ -119,6 +120,7 @@ Unused keys: 0
 
   - auth.login_button_text
   - profile.edit_profile_link
+```
 
 Installation
 Just clone this repository. It's a standalone script, not a package.
@@ -126,7 +128,7 @@ Just clone this repository. It's a standalone script, not a package.
 
 
 ```bash
-git clone https://github.com/PohinaGroup/validate-translations.git
+git clone git@github.com:PohinaGroup/validate-translations.git
 cd validate-translations
 ```
 Make sure you have Node.js installed. The glob package is a dependency, so you might need to run npm install or yarn if you're getting module not found errors.
